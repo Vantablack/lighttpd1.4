@@ -766,37 +766,7 @@ static void http_list_directory_header(server *srv, connection *con, plugin_data
 			buffer_append_string_len(out, CONST_STR_LEN("\">\n"));
 		} else {
 			buffer_append_string_len(out, CONST_STR_LEN(
-				"<style type=\"text/css\">\n"
-				"a, a:active {text-decoration: none; color: blue;}\n"
-				"a:visited {color: #48468F;}\n"
-				"a:hover, a:focus {text-decoration: underline; color: red;}\n"
-				"body {background-color: #F5F5F5;}\n"
-				"h2 {margin-bottom: 12px;}\n"
-				"table {margin-left: 12px;}\n"
-				"th, td {"
-				" font: 90% monospace;"
-				" text-align: left;"
-				"}\n"
-				"th {"
-				" font-weight: bold;"
-				" padding-right: 14px;"
-				" padding-bottom: 3px;"
-				"}\n"
-				"td {padding-right: 14px;}\n"
-				"td.s, th.s {text-align: right;}\n"
-				"div.list {"
-				" background-color: white;"
-				" border-top: 1px solid #646464;"
-				" border-bottom: 1px solid #646464;"
-				" padding-top: 10px;"
-				" padding-bottom: 14px;"
-				"}\n"
-				"div.foot {"
-				" font: 90% monospace;"
-				" color: #787878;"
-				" padding-top: 4px;"
-				"}\n"
-				"</style>\n"
+				"<style type=\"text/css\">td,th{padding-right:14px}body,html{background:#222}html{color:#ddd}a,a:active{text-decoration:none;color:#32C6FF}a:visited{color:#BD32FF}a:focus,a:hover{text-decoration:underline;color:#B8EBFF}h2{margin-bottom:12px;font:100% monospace}table{margin-left:12px}td,th{font:90% monospace;text-align:left}th{font-weight:700;padding-bottom:3px}td.s,th.s{text-align:right}tr:hover{background:#000}div.list{background-color:#111;padding-top:10px;padding-bottom:14px}div.foot{font:90% monospace;color:#777;padding-top:4px}::selection{background:#32C6FF}</style>\n"
 			));
 		}
 
